@@ -11,8 +11,17 @@ config_version=5
 [application]
 
 config/name="mind your steps"
+run/main_scene="uid://du2tibusckrj1"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
 [physics]
 
