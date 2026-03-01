@@ -29,4 +29,5 @@ func _on_area_entered(_area):
 	timer.start()
 
 func _change_scene():
+	await get_tree().create_timer(3.0).timeout
 	get_tree().change_scene_to_file("res://scenes/msg.tscn")
