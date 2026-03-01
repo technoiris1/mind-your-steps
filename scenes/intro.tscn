@@ -5,6 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://bulbgfoh31v2e" path="res://scenes/monkey.tscn" id="3_4bx60"]
 [ext_resource type="Texture2D" uid="uid://tum68hoerxj2" path="res://assets/Banana.png" id="4_wfs7u"]
 [ext_resource type="Script" uid="uid://y37ttgh1umq4" path="res://scripts/cherry.gd" id="5_es01l"]
+[ext_resource type="FontFile" uid="uid://dfuxktokivq5b" path="res://assets/fonts/Pixel Game.otf" id="6_es01l"]
+[ext_resource type="Script" uid="uid://u0p67ud18jm4" path="res://scripts/banana_counter.gd" id="7_0naf5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4bx60"]
 texture = ExtResource("2_yjqpq")
@@ -79,7 +81,8 @@ limit_bottom = 800
 position = Vector2(10.333333, 59.666668)
 polygon = PackedVector2Array(-0.33333334, 169, 847.3334, 170.66667, 397.33334, 288, 90.333336, 266.33334, 21.666668, 256.6667)
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1600482527]
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1681795315]
+polygon = PackedVector2Array(-1, 10, -0.33333334, 228.66667, -134.33334, 253.66667, -171, 289, -320.33334, 1037.3334, 2005.6667, 499.6667, 865.3334, 231, 838.3334, 229.33334, 832.6667, 5.666667, 11.666667, -19.666668, 301, -34.666668, 1545, -494.6667, 2542.3335, 283.33334, 2412.6667, 961.6667, 2283, 1330.6667, 28.666668, 1989, -1058.3334, 1909, -1607, 1789.3334, -1317.6667, 782, -1018.6667, 482.6667)
 
 [node name="banana" type="Sprite2D" parent="." unique_id=1103910832]
 position = Vector2(242.8542, 219.41577)
@@ -92,5 +95,18 @@ collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="banana/Area2D" unique_id=1805673597]
 shape = SubResource("CircleShape2D_0naf5")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1887934866]
+scale = Vector2(2, 2)
+transform = Transform2D(2, 0, 0, 2, 0, 0)
+
+[node name="banana counter" type="Label" parent="CanvasLayer" unique_id=1113098378]
+offset_left = 9.5
+offset_top = 12.0
+offset_right = 496.5
+offset_bottom = 143.0
+theme_override_colors/font_color = Color(0.011702106, 0.011702109, 0.011702107, 1)
+theme_override_fonts/font = ExtResource("6_es01l")
+script = ExtResource("7_0naf5")
 
 [editable path="monkey"]

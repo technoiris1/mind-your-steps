@@ -17,8 +17,9 @@ func _on_timer_timeout():
 func _on_body_entered(_body):
 	timer.stop()
 	hide()
+	GameManager.collect_banana()
 
 func _on_area_entered(_area):
 	timer.stop()
 	hide()
-	GameManager.banana_count += 1
+	GameManager.collect_banana()
