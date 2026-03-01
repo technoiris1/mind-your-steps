@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cx5l7hxghf28w" path="res://assets/monkey/Character Spritesheets/5-Dead/Dead.png" id="2_nandu"]
 [ext_resource type="Texture2D" uid="uid://d06d7rsx3v73u" path="res://assets/monkey/Character Spritesheets/3-Jump/Jump.png" id="4_irmjr"]
 [ext_resource type="Texture2D" uid="uid://drg3chxtysoh3" path="res://assets/monkey/Character Spritesheets/2-Run/Run.png" id="5_b0hpa"]
+[ext_resource type="FontFile" uid="uid://dfuxktokivq5b" path="res://assets/fonts/Pixel Game.otf" id="6_nandu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sdq1a"]
 atlas = ExtResource("2_nandu")
@@ -315,3 +316,11 @@ shape = SubResource("CapsuleShape2D_rb1f4")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=66530472]
 limit_left = 0
 limit_top = 0
+
+[node name="label" type="Label" parent="." unique_id=1788918741]
+offset_left = -15.0
+offset_top = -35.0
+offset_right = 30.0
+offset_bottom = -12.0
+theme_override_fonts/font = ExtResource("6_nandu")
+text = "punch :>"
