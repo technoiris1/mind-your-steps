@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dl8hqyelywr2t"]
+
+[ext_resource type="Script" uid="uid://vkkp0055a0xe" path="res://scripts/msg.gd" id="1_3q85d"]
+[ext_resource type="FontFile" uid="uid://dfuxktokivq5b" path="res://assets/fonts/Pixel Game.otf" id="2_til83"]
+[ext_resource type="AudioStream" uid="uid://bsmjqsfy6vv7k" path="res://assets/shock.mp3" id="3_rduhr"]
+
+[node name="msg" type="Node2D" unique_id=868667955]
+script = ExtResource("1_3q85d")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1007000421]
+offset_right = 1150.0
+offset_bottom = 649.0
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect" unique_id=152701098]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 192.0
+offset_top = 217.0
+offset_right = -168.0
+offset_bottom = -60.0
+theme_override_fonts/normal_font = ExtResource("2_til83")
+theme_override_font_sizes/normal_font_size = 60
+text = "You fell down the ridge stupid ahh monkey, you gotta solve puzzles to get back now. im crine 
+
+
+"
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=398191879]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 521.0
+offset_right = 641.0
+offset_bottom = 562.0
+theme_override_fonts/font = ExtResource("2_til83")
+theme_override_font_sizes/font_size = 40
+text = "PRESS SPACE"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=212946159]
+stream = ExtResource("3_rduhr")
+autoplay = true
