@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://y37ttgh1umq4" path="res://scripts/cherry.gd" id="5_es01l"]
 [ext_resource type="FontFile" uid="uid://dfuxktokivq5b" path="res://assets/fonts/Pixel Game.otf" id="6_es01l"]
 [ext_resource type="Script" uid="uid://u0p67ud18jm4" path="res://scripts/banana_counter.gd" id="7_0naf5"]
+[ext_resource type="Script" uid="uid://bqi7fwfcmltdm" path="res://scripts/portal_intro.gd" id="8_bu1yb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4bx60"]
 texture = ExtResource("2_yjqpq")
@@ -45,6 +46,9 @@ sources/1 = SubResource("TileSetAtlasSource_i2l1n")
 [sub_resource type="CircleShape2D" id="CircleShape2D_0naf5"]
 radius = 21.885588
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t1qkj"]
+size = Vector2(10.000023, 75.66667)
+
 [node name="intro" type="Node2D" unique_id=360045792]
 scale = Vector2(3, 3)
 
@@ -82,7 +86,7 @@ position = Vector2(-0.33333325, 23.333334)
 polygon = PackedVector2Array(-0.33333334, 169, 847.3334, 170.66667, 397.33334, 288, 90.333336, 266.33334, 21.666668, 256.6667)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1681795315]
-polygon = PackedVector2Array(-1, 10, -0.33333334, 228.66667, -134.33334, 253.66667, -171, 289, -320.33334, 1037.3334, 2005.6667, 499.6667, 865.3334, 231, 838.3334, 229.33334, 832.6667, 5.666667, 14.333334, -4, 301, -34.666668, 1545, -494.6667, 2542.3335, 283.33334, 2412.6667, 961.6667, 2283, 1330.6667, 28.666668, 1989, -1058.3334, 1909, -1607, 1789.3334, -1317.6667, 782, -1018.6667, 482.6667)
+polygon = PackedVector2Array(-1, 10, -0.33333334, 228.66667, -134.33334, 253.66667, -171, 289, -320.33334, 1037.3334, 2005.6667, 499.6667, 865.3334, 231, 838.3334, 229.33334, 837.3334, 194, 897.3334, 194, 894, 118.66667, 835.6667, 120.333336, 832.6667, 5.666667, 14.333334, -4, 301, -34.666668, 1545, -494.6667, 2542.3335, 283.33334, 2412.6667, 961.6667, 2283, 1330.6667, 28.666668, 1989, -1058.3334, 1909, -1607, 1789.3334, -1317.6667, 782, -1018.6667, 482.6667)
 
 [node name="banana" type="Sprite2D" parent="." unique_id=1103910832]
 position = Vector2(241.52087, 182.41577)
@@ -97,10 +101,10 @@ collision_mask = 8
 shape = SubResource("CircleShape2D_0naf5")
 
 [node name="title" type="Label" parent="." unique_id=1234882413]
-offset_left = 204.66667
-offset_top = 64.666664
-offset_right = 1131.6666
-offset_bottom = 246.66669
+offset_left = 208.66667
+offset_top = 65.0
+offset_right = 1135.6666
+offset_bottom = 247.00003
 theme_override_colors/font_color = Color(1, 1, 0.20784314, 1)
 theme_override_fonts/font = ExtResource("6_es01l")
 theme_override_font_sizes/font_size = 60
@@ -138,5 +142,13 @@ offset_right = 592.0
 offset_bottom = 141.33334
 theme_override_fonts/font = ExtResource("6_es01l")
 text = "WASD to move, SPACE to jump"
+
+[node name="portal_intro" type="Area2D" parent="." unique_id=711017255]
+collision_mask = 8
+script = ExtResource("8_bu1yb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="portal_intro" unique_id=1666709118]
+position = Vector2(891, 155.83334)
+shape = SubResource("RectangleShape2D_t1qkj")
 
 [editable path="monkey"]
