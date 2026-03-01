@@ -14,7 +14,7 @@
 size = Vector2(219.93524, 25.982704)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o6xl0"]
-size = Vector2(20, 248.44489)
+size = Vector2(20, 323.60696)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tefeu"]
 size = Vector2(258.3154, 13.887726)
@@ -54,7 +54,7 @@ sources/0 = SubResource("TileSetAtlasSource_tipki")
 sources/1 = SubResource("TileSetAtlasSource_85g3d")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tbgi4"]
-size = Vector2(388.76898, 218.14267)
+size = Vector2(388.76898, 286.39328)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_choun"]
 radius = 21.885588
@@ -98,8 +98,8 @@ position = Vector2(-130.02159, 42.33261)
 polygon = PackedVector2Array(342.98053, 220.73431, 345.14038, 210.36716, 358.5313, 210.79912, 363.2829, 206.0475, 413.39093, 206.91144, 415.11877, 194.38443, 477.75372, 193.08853, 475.16193, 251.83585, 414.68677, 238.01294, 348.5961, 238.87688)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1896531207]
-position = Vector2(241.03665, 420.48587)
-scale = Vector2(0.99999994, 0.99999994)
+position = Vector2(241.03665, 458.0669)
+scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("RectangleShape2D_o6xl0")
 
 [node name="lvl_restart" type="Area2D" parent="." unique_id=2059950672]
@@ -126,7 +126,7 @@ collision_mask = 8
 script = ExtResource("6_o6xl0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="lvl_change" unique_id=1568222679]
-position = Vector2(105.39957, 519.87024)
+position = Vector2(105.39957, 772.13806)
 scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_tbgi4")
 
