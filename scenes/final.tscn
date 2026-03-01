@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bdd5wusqjhr2d"]
+
+[ext_resource type="PackedScene" uid="uid://dl8hqyelywr2t" path="res://scenes/msg.tscn" id="1_4pp6u"]
+
+[node name="final" type="Node2D" unique_id=532162553]
+
+[node name="msg" parent="." unique_id=868667955 instance=ExtResource("1_4pp6u")]
+
+[node name="ColorRect" parent="msg" index="0" unique_id=1007000421]
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" parent="msg/ColorRect" index="0" unique_id=152701098]
+text = "You were able to get out! congrats ig"
+
+[node name="Label" parent="msg/ColorRect" index="1" unique_id=398191879]
+text = ""
+
+[editable path="msg"]
