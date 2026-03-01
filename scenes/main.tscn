@@ -16,7 +16,7 @@ size = Vector2(219.93524, 25.982704)
 size = Vector2(20, 248.44489)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tefeu"]
-size = Vector2(223.75801, 13.887726)
+size = Vector2(258.3154, 13.887726)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tipki"]
 texture = ExtResource("7_o6xl0")
@@ -107,8 +107,8 @@ collision_mask = 8
 script = ExtResource("4_tefeu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="lvl_restart" unique_id=264682474]
-position = Vector2(387.04095, 272.1057)
-scale = Vector2(0.9999998, 0.9999998)
+position = Vector2(404.3196, 272.1057)
+scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_tefeu")
 
 [node name="tilemaps" type="Node" parent="." unique_id=1973896199]

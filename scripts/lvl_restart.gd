@@ -5,7 +5,9 @@ func _ready():
 	area_entered.connect(_on_area_entered)
 
 func _on_body_entered(_body):
-	get_tree().change_scene_to_file("res://intro.tscn")
+	await get_tree().create_timer(1.95).timeout
+	get_tree().change_scene_to_file("res://scenes/main.tscn")
 
 func _on_area_entered(_area):
-	get_tree().change_scene_to_file("res://intro.tscn")
+	await get_tree().create_timer(1.95).timeout
+	get_tree().change_scene_to_file("res://scenes/main.tscn")
