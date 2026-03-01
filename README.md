@@ -1,2 +1,2 @@
-hey! this is a 2d game made in godot for a hackathon called campfire delhi
-it's 
+heyo! This is a game I made at a hackathon named campfire delhi, it's on the "beneath the surface" theme. You're basically a monkey in it and have to collect bananas but while getting one you fall down a ridge and get stuck in a ravine, where you have to solve a puzzle to get back up.
+thank you so much!
