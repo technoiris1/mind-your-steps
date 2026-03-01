@@ -8,6 +8,7 @@
 [ext_resource type="FontFile" uid="uid://dfuxktokivq5b" path="res://assets/fonts/Pixel Game.otf" id="6_es01l"]
 [ext_resource type="Script" uid="uid://u0p67ud18jm4" path="res://scripts/banana_counter.gd" id="7_0naf5"]
 [ext_resource type="Script" uid="uid://bqi7fwfcmltdm" path="res://scripts/portal_intro.gd" id="8_bu1yb"]
+[ext_resource type="AudioStream" uid="uid://30r4tyook5ea" path="res://assets/bgm.mp3" id="9_t1qkj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4bx60"]
 texture = ExtResource("2_yjqpq")
@@ -150,5 +151,9 @@ script = ExtResource("8_bu1yb")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="portal_intro" unique_id=1666709118]
 position = Vector2(891, 155.83334)
 shape = SubResource("RectangleShape2D_t1qkj")
+
+[node name="bgm" type="AudioStreamPlayer2D" parent="." unique_id=2086727516]
+stream = ExtResource("9_t1qkj")
+autoplay = true
 
 [editable path="monkey"]

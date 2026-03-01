@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bdgmvwqpkehj8" path="res://assets/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="7_o6xl0"]
 [ext_resource type="Texture2D" uid="uid://tum68hoerxj2" path="res://assets/Banana.png" id="7_tipki"]
 [ext_resource type="Script" uid="uid://y37ttgh1umq4" path="res://scripts/cherry.gd" id="8_85g3d"]
+[ext_resource type="AudioStream" uid="uid://30r4tyook5ea" path="res://assets/bgm.mp3" id="9_85g3d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jyhfs"]
 size = Vector2(219.93524, 25.982704)
@@ -188,5 +189,9 @@ collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="banana6/Area2D" unique_id=422434728]
 shape = SubResource("CircleShape2D_choun")
+
+[node name="bgm" type="AudioStreamPlayer2D" parent="." unique_id=1638417657]
+stream = ExtResource("9_85g3d")
+autoplay = true
 
 [editable path="monkey"]
